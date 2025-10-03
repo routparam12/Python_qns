@@ -21,3 +21,15 @@ Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (m
 Total amount you can rob = 2 + 9 + 1 = 12.
 
 
+from typing import List
+
+class Solution:
+    def rob(self, nums: List[int]) -> int:
+        rob1, rob2 = 0, 0   # rob1 = dp[i-2], rob2 = dp[i-1]
+
+        for n in nums:
+            newRob = max(rob1 + n, rob2)  
+            rob1 = rob2
+            rob2 = newRob
+        
+        return rob2
