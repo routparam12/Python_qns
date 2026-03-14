@@ -1,0 +1,62 @@
+DECORATOR :
+In Python, decorators are a powerful feature that lets you modify or extend the behavior of functions or methods without changing their actual code.
+
+They are widely used for logging, authentication, caching, performance measurement, and more.
+
+Basic Decorator Syntax
+A decorator is simply a function that takes another function as an argument, adds some functionality, and returns a new function.
+
+
+
+There are 2 types of data types in py
+  1. Mutable () - list, set
+  2. Immutabe - int, string
+
+
+
+Each time we store any value in a variable in python it creates a space in memory (RAM) 
+When we change the value of the variable then it creates another space for the new variable .
+
+lets say we created  a variable -->>   username = "Param"
+                                        username = "Hitesh"
+                                              username2 = username
+                                    then if we will print(username)       //Hitesh
+                                                    print(username2)              //Param   -- It still have the reference of older variable
+
+
+Object types or data types 
+
+Number:  12, 34, 3.24 Decimal , 3+4j , 0b11, Decimal(), Fraction()
+
+String: 'spam', "Bob's", u'sp\xc4M'
+
+List: [1, [2,'three'],4.5, list(range(10))]
+
+Tuple: (1, 'spam', 4, 'U')
+
+
+Dictonary contains key:value   
+Dictonary: {'food':'spam','taste':'yum'}
+
+Set: set('abc),{'a','b','c'}
+
+File: open('eggs.txt'), open(r'C:\ham.bin','wb')
+
+Boolean: True, False
+
+None: None
+
+
+Functions, Modules, classes
+
+Advance: Decorators, Generators, Iterators, MetaProgramming
+
+
+
+
+
+
+
+
+
+
