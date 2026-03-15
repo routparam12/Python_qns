@@ -184,6 +184,63 @@ Lemon Chai
 
 
 
+Python have diff types of parentheses 
+() -- round   --Function calls and arguments: print(x), len([1,2,3]).
+
+Tuples: t = (1, 2, 3) creates an immutable tuple.
+
+Grouping expressions/precedence: (1 + 2) * 3 forces the addition first.
+
+Also used in if (condition), while (...) etc. just for grouping, not required by syntax like in C/C++
+
+
+{}  -- curly
+
+Curly braces {}
+Sets: s = {1, 2, 3} creates a set (unique, unordered elements).
+
+Dictionaries: d = {"a": 1, "b": 2} maps keys to values.
+
+Set/dict comprehensions: {x*x for x in nums}, {k: v for k, v in pairs}.
+​
+
+Also appear inside f-strings for expressions: f"Value is {x}"
+
+[]   --square
+
+Square brackets []
+Lists: nums = [1, 2, 3] creates a list.
+
+Indexing and slicing: nums[0], s[1:4], matrix[2][1].
+
+Comprehensions: [x*x for x in nums] builds a new list.
+
+
+tea_varieties = ["Green","Black","Herbal","Lemon"]
+
+print(tea_varities)
+["Green","Black","Herbal","Lemon"]
+tea_varities[1] = "Oolong"
+["Green","Oolong","Herbal","Lemon"]
+
+tea_varities[1:2] = "Masala"
+["Green","M","a","s","a","l","a","Herbal","Lemon"]         --> Why is this output? In this 
+                                                            case the values got treated like                                                              an array.
+
+
+tea_varieties= ["Green","Black","Herbal","Lemon"]
+tea_varieties[1:2]=["Oolong"]
+tea_varieties
+["Green","Oolong","Herbal","Lemon"]
+tea_varieties[1:3]=["Oolong","Masala"]
+tea_varieties
+["Green","Oolong","Masala","Lemon"]
+
+tea_varieties [1:1]= ["test","test"]       -- "test" got inserted in first place as requested, and all others got shifted accordingly
+tea_varieties
+["Green","test","test","Black","Herbal","Lemon"]
+
+
 
 
 
