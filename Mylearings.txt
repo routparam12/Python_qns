@@ -316,3 +316,104 @@ squared_num
 cube_num = [y**3 for y in range (5)]
 cube_num
 [0,1,8,27,64]
+
+
+
+
+Dictonaries
+-----------------
+chai_types = {"Masala":"spicy","Ginger":"Zesty","Green":"Mild"}
+chai_types["Masala"]
+'Spicy'
+chai_types.get("Ginger")
+'Zesty'
+chai_types["Masalaa"]
+keyError: 'Masalaa'
+
+
+chai_types 
+{"Masala":"spicy","Ginger":"Zesty","Green":"Mild"}
+chai_types["Green"]="Fresh"
+chai_types
+{"Masala":"spicy","Ginger":"Zesty","Green":"Fresh"}
+
+
+for chai in chai_types:
+  print("chai")
+Masala
+Ginger
+Green
+for chai in chai_types:
+  print(chai, chai_types[chai])
+Masala spicy
+Ginger Zesty
+Green Fresh
+
+
+for key,value in chai_types.items():
+  print(key, value)
+
+Masala spicy
+Ginger Zesty
+Green Fresh
+
+
+
+
+if "Masala" in chai_types:
+  print("I have masala chai")
+I have masala chai
+
+print(len(chai_types))
+3
+
+chai_types
+{'Masala': 'spicy', 'Ginger': 'zesty', 'Green': 'Fresh'}
+
+chai_types["Earl Grey"]= "Citrus"
+chai_types
+{"Masala":"spicy","Ginger":"Zesty","Green":"Mild","Earl Grey":"Citrus"}
+
+chai_types.pop("Ginger")
+"Zesty"
+chai_types
+{"Masala":"spicy","Green":"Mild"}
+
+chai_types.popitem()
+('Green','Mild')
+
+chai_types
+{"Masala":"spicy"}
+
+
+
+chai_types= {"Masala":"spicy","Ginger":"Zesty","Green":"Mild"}
+del chai_types["Green"]
+chai_types
+{'Masala':'spicy'}
+
+
+
+
+tea_shop = {
+"chai":{"Masala" : "spicy", "Ginger":"Zesty"},
+"Tea" : {"Green": "Mild","Black":"Strong"}
+}
+tea_shop
+{'chai':{'Masala':'Spicy','Ginger': 'zesty'},'Tea':{'Green': 'Mild', 'Black': 'Strong'}}
+tea_shop["chai"]
+{'Masala':'Spicy', 'Ginger': 'Zesty'}
+}
+
+
+tea_shop["chai"]["Ginger"]
+'Zesty'
+
+squared_num = {x:x**2 for x in range(6)}
+squared_num
+{0: 0,1: 1,2: 4,3: 9,4: 16,5: 25}
+
+
+
+
+
