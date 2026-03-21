@@ -4,7 +4,19 @@ The Iterator Protocol
 Every for loop in Python secretly calls two things:
 
 iter(obj) — gets an iterator from the object
+
 next(iterator) — fetches the next item, one at a time
+
+for x in [1, 2, 3]:
+    print(x)
+
+_iter = iter([1, 2, 3])       # calls list.__iter__()
+while True:
+    try:
+        x = next(_iter)       # calls list_iterator.__next__()
+        print(x)
+    except StopIteration:     # raised when items run out
+        break
 
 
 <img width="500" height="240" alt="Screenshot 2026-03-21 093608" src="https://github.com/user-attachments/assets/25776d1c-3895-4fa5-be58-5d1815fbe49e" />
