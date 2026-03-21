@@ -55,9 +55,13 @@ __next__(self) — called by next(), returns the next value or raises StopIterat
 
 Often the same object implements both (making it its own iterator), like Python's built-in file objects.
 while vs for — performance
+
 They compile to nearly identical bytecode. A for loop is not slower than a manual while True / next() pattern — the overhead is the same.
+
 Generators: lazy iterators
+
 When you use yield in a function, Python turns it into a generator — an object that implements the iterator protocol automatically, computing values one at a time rather than all at once:
+
 pythondef count_up(n):
     i = 0
     while i < n:
@@ -66,6 +70,8 @@ pythondef count_up(n):
 
 for x in count_up(5):   # works perfectly as an iterable
     print(x)
+    
 Each call to next() resumes the function from where it left off at the yield. This is how Python can loop over infinite sequences without running out of memory.
+
 Key takeaways
 The for loop is syntactic sugar over the iterator protocol. Any object that defines __iter__ and __next__ can be looped — that's why for works uniformly on lists, strings, files, generators, database cursors, HTTP response streams, and anything else you can imagine. Sonnet 4.6
