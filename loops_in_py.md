@@ -7,6 +7,7 @@ iter(obj) — gets an iterator from the object
 next(iterator) — fetches the next item, one at a time
 
 
+<img width="500" height="240" alt="Screenshot 2026-03-21 093608" src="https://github.com/user-attachments/assets/25776d1c-3895-4fa5-be58-5d1815fbe49e" />
 
 
 
